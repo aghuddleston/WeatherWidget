@@ -1,0 +1,97 @@
+/*
+ This css is for the 'annie-weather-widget'.  The widget assumes the
+ cleanslate.css is applied to the widget.  All annie-weather-widget styles
+ must use !important to override the cleanslate.css styles.  See
+ https://github.com/premasagar/cleanslate for more information on how
+ to use cleanslate.css.
+*/
+
+.annieweather {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+
+.annieweather .weatherloc {
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+}
+
+.annieweather div.current {
+    margin: 15px 0 !important;
+    height: 65px !important;
+}
+
+.annieweather div.current div.temp {
+    font-size: 64px !important;
+    float: left !important;
+    width: 33% !important;
+}
+
+.annieweather div.current div.condition {
+    font-size: 9px !important;
+    float: right !important;
+    width: 67% !important;
+}
+
+.annieweather div.current div.condition img {
+    display: block !important;
+}
+
+.annieweather ul.forecast {
+    list-style: none !important;
+    clear: both !important;
+}
+
+.annieweather .forecast li {
+    float: left !important;
+    position: relative !important;
+    list-style-type: none !important;
+}
+
+.annieweather .forecast li div.daily {
+    width: 55px !important;
+    height: 29px !important;
+    text-align: center !important;
+    padding: 6px 3px !important;
+    border-right: 1px dotted #888 !important;
+}
+
+.annieweather ul.forecast > li:last-child > div {
+    border-right: none !important;
+}
+
+.annieweather .forecast li div.daily div.day{
+    font-size: 13px !important;
+    padding: 0 !important;
+}
+
+.annieweather ul.forecast li div.daily div.highlow{
+    font-size: 10px !important;
+    padding: 0 !important;
+}
+
+#annie-weather-widget {
+    height: 160px !important;
+    width: 310px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    -moz-box-shadow: 5px 5px 5px #888 !important;
+    -webkit-box-shadow: 5px 5px 5px #888 !important;
+    box-shadow: 5px 5px 5px #888 !important;
+    border: 1px solid #888 !important;
+    padding: 5px !important;
+
+    /*Centering strategy 1*/
+    /*position: absolute !important;*/
+    /*top: 50% !important;*/
+    /*left: 50% !important;*/
+    /*margin: -80px 0 0 -155px !important;*/
+
+    /*Centering strategy 2*/
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+}
+

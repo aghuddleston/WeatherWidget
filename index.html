@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!--To include the weather widget, put this div and the script tag on your page-->
+    <div id="annie-weather-widget"></div>
+    <script type="text/javascript">
+        // Async script load, supported by IE9.  Can be replaced with script async
+        // tag if supporting IE10+.
+        (function() {
+            function asyncLoad() {
+                var s = document.createElement('script');
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "ww.js";
+                document.body.appendChild(s);
+            }
+            if (window.attachEvent) {
+                window.attachEvent('onload', asyncLoad);
+            } else {
+                window.addEventListener('load', asyncLoad, false);
+            }
+        })();
+    </script>
+</body>
+</html>
